@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&family=Raleway:wght@300;400;900&display=swap');
+*{margin: 0;padding: 0;}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.bg{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background-image: url("./GradientBG.svg");
+    background-size: cover;
+    animation: gradientAnim 5s ease infinite;
+}
+
+@keyframes gradientAnim {
+
+    0% {
+        height: 120vh;
+        width: 120%; 
+    }
+    50% {
+        height: 150vh;
+        width: 150%; 
+    }
+    100% {
+        height: 120vh;
+        width: 120%; 
+    }
+    
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    position: absolute;
+    height: 7vw;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 0 0 2vw 2vw;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    margin-top: 3vw;
+}
+
+.navbar ul li{
+    font-size: 1.3vw;
+    margin: 1vw;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.navbar ul li:hover{
+    color: rgb(174, 174, 174);
+    transition: .2s;
+}
+
+/* logo */
+
+.logo{
+    height: 5vw;
+    width: 9.5vw;
+    margin-left: 10%;
+    margin-top: 3%;
+    background-image: url("./vaultify.png");
+    background-size: contain;
+    opacity: .7;
+}
+
+.header{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textSec{
+    height: 100%;
+    width: 40%;
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.animSec{
+    height: 100%;
+    width: 40%;
+}
+spline-viewer{
+    height: 100vw;
+}
+/* desc */
+
+.big{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.3vw;
+    font-weight: 900;
+    color: white;
+}
+.sub{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2.2vw;
+    color: white;
+    margin: 2vw 1.5vw;
+}
+.btn{
+    width: 98%;
+    height: 4vw;
+    color: white;
+    margin: .5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 300;
+    font-size: 1.6vw;
+    transition: .2s;
+
+}
+.btn:hover{
+    opacity: .8;
+    transition: .2s;
+}
+.button1{
+    background-image: linear-gradient(to right,#806609,#0a2c4ce0);
+}
+.button2{
+    background-image: linear-gradient(to right,#E69347,#360A4C);
+}
+y{
+    color: yellow;
+}
+.btnIcon{
+    margin: 1vw;
+    height: 2vw;
+    width: 2vw;
+    background-size: cover;
+}
+metamask{
+    background-image: url("./metamask.svg");
+}
+tut{
+    background-image: url("./tut.svg");
+}
+uline{
+    text-decoration: underline;
+    text-underline-offset: .4vw;
+}
